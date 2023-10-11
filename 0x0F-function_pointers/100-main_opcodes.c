@@ -8,7 +8,7 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, char **argiv)
+int main(int argc, char *argv[])
 {
 	int bytes, i;
 	char *arr;
