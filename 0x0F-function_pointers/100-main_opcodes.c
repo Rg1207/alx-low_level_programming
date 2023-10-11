@@ -3,10 +3,10 @@
 
 /**
  * main - points its own opcodes
- * @argc: the number of args
+ * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: Alwas 0. (Success)
+ * Return: Always 0 (Success)
  */
 int main(int argc, char **argiv)
 {
