@@ -5,18 +5,21 @@
  * @head: address of pointer to first node
  *
  * Return: value of popped node
+ * or 0 if the list is empty
  */
+  
 int pop_listint(listint_t **head)
 {
 	listint_t *node;
-	int n;
+	int num;
 
 	if (!head || !*head)
 		return (0);
 
-	node = (*head)->next;
-	n = (*head)->n;
+	num = (*head)->n;
+	temp = (*head)->next;
 	free(*head);
-	*head = node;
-	return (n);
+	*head = temp;
+
+	return (num);
 }
