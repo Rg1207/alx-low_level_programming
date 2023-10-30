@@ -35,10 +35,10 @@ int main(int ac, char **av)
 
 	from_fd = close(from_fd);
 	to_fd = close(to_fd);
-	if (from_fd == -1)
+	if (from_fd)
 		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
-	if (to_fd == -1)
-		dprintf(STDERR_FILENO, ERR_NOCLOSE, to_fd), exit(100);
+	if (to_fd)
+		dprintf(STDERR_FILENO, ERR_NOCLOSE, from_fd), exit(100);
 
 	return (EXIT_SUCCESS);
 }
